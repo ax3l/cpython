@@ -1529,7 +1529,7 @@ class PyBuildExt(build_ext):
             self.missing.append('ossaudiodev')
 
         if MACOS:
-            self.add(Extension('_scproxy', ['_scproxy.c'],
+            self.add(Extension('_scproxy', ['_scproxy.m'],
                                extra_link_args=[
                                    '-framework', 'SystemConfiguration',
                                    '-framework', 'CoreFoundation']))
