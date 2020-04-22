@@ -1654,7 +1654,7 @@ class PyBuildExt(build_ext):
 
         if host_platform == 'darwin':
             exts.append(
-                       Extension('_scproxy', ['_scproxy.c'],
+                       Extension('_scproxy', ['_scproxy.m'],
                        extra_link_args=[
                            '-framework', 'SystemConfiguration',
                            '-framework', 'CoreFoundation',
