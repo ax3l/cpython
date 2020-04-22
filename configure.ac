@@ -657,6 +657,7 @@ then
 	fi
 fi
 AC_PROG_CC
+AC_PROG_OBJC  # darwin only
 AC_PROG_CPP
 AC_PROG_GREP
 AC_PROG_SED
